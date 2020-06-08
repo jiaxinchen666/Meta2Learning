@@ -27,7 +27,7 @@ python3 process.py DATASET_NAME
 cd ..
 ```
 
-For datasets 'vegetable', 'food', 'fruits' and 'butterfly', download [vegetable&fruits](https://github.com/ustc-vim/vegfru), [butterfly](https://www.dropbox.com/sh/3p4x1oc5efknd69/AABwnyoH2EKi6H9Emcyd0pXCa?dl=0),
+For datasets 'vegetable', 'food', and 'butterfly', download [vegetable](https://github.com/ustc-vim/vegfru), [butterfly](https://www.dropbox.com/sh/3p4x1oc5efknd69/AABwnyoH2EKi6H9Emcyd0pXCa?dl=0),
 [food](https://www.kaggle.com/dansbecker/food-101) and extract them into ./filelists/DATASET_NAME
 
 ```
