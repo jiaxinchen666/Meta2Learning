@@ -1,5 +1,3 @@
-Domain-Oriented Meta-Learning for Cross-Domain Few-shot Classification
-
 A pytorch implementation of Domain-Oriented Meta-Learning for Cross-Domain Few-shot Classification.
 
 ### Prerequisites
