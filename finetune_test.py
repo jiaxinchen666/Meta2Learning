@@ -75,7 +75,7 @@ if __name__ == '__main__':
         model = Ours_gnn(model_dict[params.model],domain_specific=params.domain_specific,fine_tune='True',train_lr=params.lr, **few_shot_params)
     elif params.method == 'matchingnet':
         model = Ours_mn(model_dict[params.model],domain_specific=params.domain_specific,
-                                  fine_tune='False', train_lr=params.lr,  **few_shot_params)
+                                  fine_tune='True', train_lr=params.lr,  **few_shot_params)
     elif params.method in ['relationnet','relationnet_softmax']:
         model=ours_RelationNet(model_dict[params.model],domain_specific=params.domain_specific,fine_tune='True',train_lr=params.lr, **few_shot_params)
     else:
