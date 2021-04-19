@@ -36,6 +36,16 @@ python3 write_DATASET_filelist.py
 cd ..
 ```
 
+### Feature encoder pre-training
+We adopt baseline++ for MatchingNet, and baseline from CloserLookFewShot for other metric-based frameworks.
+
+Download the pre-trained feature encoders.
+```
+cd output/checkpoints
+python3 download_encoder.py
+cd ../..
+```
+
 ### Training
 
 --dataset A DATASET LIST CONSISTING OF TRAINING DOMAINS AND TEST DOMAIN 
