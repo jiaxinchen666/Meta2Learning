@@ -23,7 +23,7 @@ cd CrossDomainFewShot
 
 ```
 cd filelists
-python3 process.py DATASET_NAME
+python process.py DATASET_NAME
 cd ..
 ```
 
@@ -32,7 +32,7 @@ For datasets 'vegetable', 'food', and 'butterfly', download [vegetable](https://
 
 ```
 cd filelists
-python3 write_DATASET_filelist.py
+python write_DATASET_filelist.py
 cd ..
 ```
 
@@ -42,7 +42,7 @@ We adopt baseline++ for MatchingNet, and baseline from CloserLookFewShot for oth
 Download the pre-trained feature encoders.
 ```
 cd output/checkpoints
-python3 download_encoder.py
+python download_encoder.py
 cd ../..
 ```
 
