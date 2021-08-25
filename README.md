@@ -1,4 +1,4 @@
-A pytorch implementation of Domain-Oriented Meta-Learning for Cross-Domain Few-shot Classification.
+A pytorch implementation of Meta$^2$ Learning.
 
 ### Prerequisites
 - Python >= 3.5
@@ -13,7 +13,7 @@ pip3 install -r requirements.txt
 ### Install
 Clone this repository:
 ```
-git clone https://github.com/jiaxinchen666/DOM.git
+git clone https://github.com/jiaxinchen666/Meta2Learning.git
 cd CrossDomainFewShot
 ```
 
@@ -50,7 +50,7 @@ cd ../..
 
 --dataset A DATASET LIST CONSISTING OF TRAINING DOMAINS AND TEST DOMAIN 
 
---n_shot 1/5, --method 'protonet'/'relationnet'/'gnnnet'/'matchingnet', --domain_specific 'True'/'False'(only for DOM)
+--n_shot 1/5, --method 'protonet'/'relationnet'/'gnnnet'/'matchingnet', --domain_specific 'True'/'False'(only for M2L)
 
 Baseline
 
@@ -64,7 +64,7 @@ LFT (Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformatio
 python train.py --n_shot 5 --testset DATASET_NAME --method METHOD --n_query 16 --mode 'onlytrain';
 ```
 
-DOM
+M2L
 
 ```
 python train_ours.py --n_shot 5 --testset DATASET_NAME --method METHOD --n_query 16 --mode 'onlytrain' --domain_specific 'True' --lr '0.1';
@@ -84,13 +84,13 @@ LFT (Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformatio
 python train.py --n_shot 5 --testset DATASET_NAME --method METHOD --n_query 16 --mode 'onlytest';
 ```
 
-DOM
+M2L
 
 ```
 python train_ours.py --n_shot 5 --testset DATASET_NAME --method METHOD --n_query 16 --mode 'onlytest' --domain_specific 'True' --lr '0.1';
 ```
 
-DOM (Further adaptation)
+M2L (Further adaptation)
 
 ```
 python finetune_test.py --n_shot 5 --testset DATASET_NAME --method METHOD --n_query 16; 
